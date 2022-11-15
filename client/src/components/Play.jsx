@@ -6,7 +6,21 @@ const Play = () => {
     name: null,
     shoe: null,
   })
-  return (
+  const handleGuess = (input, property) => {
+    guess[property] = input;
+    setGuess({...guess});
+  }
+  const targetShoe = axios.get('/sneaker')
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
 
+  return (
+    <div>
+
+    </div>
   )
 }
