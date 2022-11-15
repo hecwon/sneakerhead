@@ -10,7 +10,7 @@ mongoose.connect(`mongodb://${process.env.HOST}:27017/sneakers`)
     console.log(err);
   });
 
-const sneakerSchema = ({
+const sneakerSchema = new mongoose.Schema({
   id: {type: Number, index: true},
   gender: {type: String},
   name: {type: String},
@@ -21,7 +21,6 @@ const sneakerSchema = ({
 });
 
 sneakerSchema.plugin(AutoIncrement, {inc_field: 'id'});
-
 const sneakerModel = mongoose.model('Sneaker', sneakerSchema);
 
 module.exports = sneakerModel;
