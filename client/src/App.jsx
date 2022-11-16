@@ -2,11 +2,20 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Welcome from './components/Welcome.jsx';
 import Play from './components/Play.jsx';
+import Score from './components/Score.jsx';
 
 const App = () => {
   const [tries, setTried] = useState('-1');
   const page = JSON.parse(tries);
   console.log('page: ', page);
+
+  const [scorecard, setScorecard] = useState([]);
+
+  const handleScorecard = (entry) => {
+    const newScorecard = scorecard.concat(entry);
+    setScorecard(newScorecard);
+    console.log('updated scorecard: ', scorecard);
+  }
 
   const [shoes, setShoes] = useState([]);
 
@@ -26,7 +35,17 @@ const App = () => {
   return (
     <>
     {(tries === '-1') ? <Welcome setTried={ setTried } /> : null }
-    {(page < 10 && page >= 0) ? <Play page={page} shoe={ shoes[page] } setTried={ setTried } /> : null }
+    {(page < 10 && page >= 0) ?
+      <Play
+        page={page}
+        shoe={ shoes[page] }
+        setTried={ setTried }
+        handleScorecard={handleScorecard}
+      />
+    : null }
+    {(page >= 10) ?
+      <Score scorecard={scorecard} shoes={shoes} />
+    : null }
     </>
   )
 }
