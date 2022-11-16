@@ -12,7 +12,6 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 app.get('/sneakers', controllers.getSneakers);
 
-
 app.listen(process.env.PORT, process.env.HOST, () => {
   console.log(`Listening at PORT ${process.env.PORT}`)
 });

@@ -1,6 +1,6 @@
-import React, { useState } from 'React';
+import React, { useState } from 'react';
 
-const Play = () => {
+const Play = ({ page, shoe, setTried }) => {
   const [guess, setGuess] = useState({
     year: null,
     name: null,
@@ -10,17 +10,33 @@ const Play = () => {
     guess[property] = input;
     setGuess({...guess});
   }
-  const targetShoe = axios.get('/sneaker')
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((err) => {
-      console.log(err);
-    })
+  const handleNext = (e) => {
+    e.preventDefault();
+    const nextPage = (page + 1).toString();
+    setTried(nextPage);
+    console.log('next page is: ', nextPage);
+  }
 
   return (
     <div>
-
+      <img src={shoe.picture} />
+      <form onSubmit={handleNext}>
+        Name of Shoe
+        <input
+          id="name"
+          type="text"
+          onChange={(e) => {handleGuess(e.target.value, e.target.id)}}
+        ></input>
+        Shoe Model
+        <input
+          id="model"
+          type="text"
+          onChange={(e) => {handleGuess(e.target.value, e.target.id)}}
+        ></input>
+      <button type="submit" >Next</button>
+      </form>
     </div>
   )
 }
+
+export default Play;

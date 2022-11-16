@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Welcome = ({ setForm }) => {
+const Welcome = ({ setTried, startGame }) => {
   const [userInfo, setUserInfo] = useState({
     username: null,
     name: null,
@@ -9,10 +9,11 @@ const Welcome = ({ setForm }) => {
   const handleChange = (property, input) => {
     userInfo[property] = input;
     setUserInfo({...userInfo});
-    console.log('updated userInfo: ', userInfo);
   }
-  const handleSubmit = () => {
-    setForm('play');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log('Play button clicked');
+    setTried('0');
   }
 
 
