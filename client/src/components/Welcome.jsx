@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+// import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 
 const Welcome = ({ setTried, startGame }) => {
   const [userInfo, setUserInfo] = useState({
@@ -18,7 +20,7 @@ const Welcome = ({ setTried, startGame }) => {
 
 
   return (
-    <div>
+    <>
       <form onSubmit={handleSubmit}>
         Username*
         <br />
@@ -42,8 +44,9 @@ const Welcome = ({ setTried, startGame }) => {
         3. Flex on 'em
         <br />
       </div>
-    </div>
+    </>
   )
 }
 
 export default Welcome;
+

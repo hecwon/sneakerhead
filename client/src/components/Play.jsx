@@ -24,7 +24,6 @@ const Play = ({ page, shoe, setTried, handleScorecard }) => {
       model: '',
       gender: ''
     });
-    // event.target.reset();
     const nextPage = (page + 1).toString();
     setTried(nextPage);
   }
