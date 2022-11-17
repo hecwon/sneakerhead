@@ -12,7 +12,8 @@ const App = () => {
   const [scorecard, setScorecard] = useState([]);
 
   const handleScorecard = (entry) => {
-    const newScorecard = scorecard.concat(entry);
+    const newScorecard = [...scorecard, entry];
+
     setScorecard(newScorecard);
     console.log('updated scorecard: ', scorecard);
   }
@@ -32,9 +33,11 @@ const App = () => {
   }, []);
   console.log('shoes: ', shoes);
 
+  // replace line 40 with {(page < 10 && page >= 0) ?
   return (
     <>
     {(tries === '-1') ? <Welcome setTried={ setTried } /> : null }
+
     {(page < 10 && page >= 0) ?
       <Play
         page={page}
@@ -43,7 +46,8 @@ const App = () => {
         handleScorecard={handleScorecard}
       />
     : null }
-    {(page >= 10) ?
+    {/* changed page from 10 */}
+    {(page >= 2) ?
       <Score scorecard={scorecard} shoes={shoes} />
     : null }
     </>
