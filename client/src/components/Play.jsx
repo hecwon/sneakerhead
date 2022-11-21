@@ -42,9 +42,9 @@ const Play = ({ page, shoe, setTried, handleScorecard }) => {
   }
 
   return (
-    <Center py={12}
+    <Center py={20}
       backgroundImage={
-      'url(https://images.unsplash.com/photo-1580195367146-12afeca8d880?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80)'
+      'url(https://images.unsplash.com/photo-1561850865-b802611b72a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3024&q=80)'
     }>
       <Box
         role={'group'}
