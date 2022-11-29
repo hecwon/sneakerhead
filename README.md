@@ -1,6 +1,7 @@
 # sneakerhead
 Sneakerhead Trivia Game
 
+This application was a personal project that I created for fun.
 Test your wits against the sneakerhead trivia game, with over 7000 Jordans from all years to quiz yourself on. Do you really know your stuff?
 
 ## Description
