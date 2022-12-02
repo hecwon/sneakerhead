@@ -58,7 +58,6 @@ const Play = ({ page, shoe, setTried, handleScorecard }) => {
         zIndex={1}>
         <Box
           rounded={'lg'}
-          mt={-12}
           pos={'relative'}
           height={'60vh'}
           align={'center'}

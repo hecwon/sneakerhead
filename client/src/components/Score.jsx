@@ -27,13 +27,14 @@ const Score = ( {scorecard, shoes } ) => {
         'url(https://images.unsplash.com/photo-1587960184060-aa880aabdd04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80)'
       }
       backgroundSize={'cover'}
-      backgroundPosition={'center center'}>
+      backgroundPosition={'center center'}
       align={'center'}
+      justify={'center'}
+    >
         <Center name='center' py={50} align={'center'} justify={'center'}>
           <Box
             align={'center'}
             role={'group'}
-            p={50}
             maxW={'75vw'}
             w={'full'}
             bg={useColorModeValue('white', 'gray.800')}
