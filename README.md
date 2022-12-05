@@ -1,7 +1,7 @@
 # Sneakerhead?
 Sneakerhead Trivia Game
 
-This application was a personal project created within a 24 hour time constraint.
+This application was a personal project created within a 24 hour time constraint.  
 Test your wits against the sneakerhead trivia game, with over 7000 Jordans from all years to quiz yourself on. Do you really know your stuff?
 
 ### Description
