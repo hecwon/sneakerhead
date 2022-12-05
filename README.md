@@ -10,7 +10,8 @@ An interactive application in which the premise is to guess the details of the s
 - Release Year: 300 points
 - Name: 300 points
 - Model: 300 points
-- Gender: 100 points  
+- Gender: 100 point
+
 [![HCkpQAQ.md.jpg](https://iili.io/HCkpQAQ.md.jpg)](https://freeimage.host/i/HCkpQAQ)  
 
 Totaling 1000 points for 1 correctly guessed shoe. 
