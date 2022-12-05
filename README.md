@@ -18,3 +18,9 @@ After 10 guesses, the game is over and a total score out of 10,000 points possib
 MongoDB, React, Javascript, Node.js, Express.js
 
 A third-party API was used to ETL the MongoDB with data for quick load time and cost reduction.
+
+[![HCkpQAQ.md.jpg](https://iili.io/HCkpQAQ.md.jpg)](https://freeimage.host/i/HCkpQAQ)
+[![HCkpmV1.md.jpg](https://iili.io/HCkpmV1.md.jpg)](https://freeimage.host/i/HCkpmV1)
+[![HCkptDB.md.jpg](https://iili.io/HCkptDB.md.jpg)](https://freeimage.host/i/HCkptDB)
+[![HCkpZNV.md.jpg](https://iili.io/HCkpZNV.md.jpg)](https://freeimage.host/i/HCkpZNV)
+[![HCkpboP.md.jpg](https://iili.io/HCkpboP.md.jpg)](https://freeimage.host/i/HCkpboP)
