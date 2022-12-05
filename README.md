@@ -1,6 +1,8 @@
 # Sneakerhead?
 Sneakerhead Trivia Game
 
+[![HCkpmV1.md.jpg](https://iili.io/HCkpmV1.md.jpg)](https://freeimage.host/i/HCkpmV1)
+
 This application was a personal project created within a 24 hour time constraint.  
 
 Test your wits against the sneakerhead trivia game, with over 7000 Jordans from all years to quiz yourself on. Do you really know your stuff?
@@ -32,7 +34,7 @@ All 10 play components are actually the same component, but re-rendered based on
 Each input field has its own parsing function for scoring and is then compared with a normalized version of the actual database value for that specific field.  
 
 For example, the database value for the shoe's "name" property has the words "Jordan" and "Retro" removed before scoring. Then, the user input string is split and checked against the normalized database value to see what percentage of words are found within the user input. This is then multiplied by 300 to produce the appropriate weighting.  
-[![HCkpmV1.md.jpg](https://iili.io/HCkpmV1.md.jpg)](https://freeimage.host/i/HCkpmV1)
+
 
 ## Technologies
 MongoDB, React, Javascript, Node.js, Express.js 
