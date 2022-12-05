@@ -18,7 +18,6 @@ An interactive application in which the premise is to guess the details of the s
 
 Totaling 1000 points for 1 correctly guessed shoe. 
 After 10 guesses, the game is over and a total score out of 10,000 points possible will be displayed for the user to revel in.  
-[![HCkpboP.md.jpg](https://iili.io/HCkpboP.md.jpg)](https://freeimage.host/i/HCkpboP)
 
 ### How does it work?
 A 3rd-party sneaker database API was used to extract, transform, and load each shoe into a MongoDB. The ETL process was performed by creating a loader file and running it within node.js. Mongoose-sequence was used to produce a sequential numerical labeling of each entry.
@@ -31,10 +30,11 @@ All 10 play components are actually the same component, but re-rendered based on
 [![HCkpZNV.md.jpg](https://iili.io/HCkpZNV.md.jpg)](https://freeimage.host/i/HCkpZNV)
 
 ## Score Component
-Each input field has its own parsing function for scoring and is then compared with a normalized version of the actual database value for that specific field.  
+Each input field has its own parsing function for scoring and is then compared with a normalized version of the actual database value for that specific field.
 
 For example, the database value for the shoe's "name" property has the words "Jordan" and "Retro" removed before scoring. Then, the user input string is split and checked against the normalized database value to see what percentage of words are found within the user input. This is then multiplied by 300 to produce the appropriate weighting.  
 
+[![HCkpboP.md.jpg](https://iili.io/HCkpboP.md.jpg)](https://freeimage.host/i/HCkpboP)
 
 ## Technologies
 MongoDB, React, Javascript, Node.js, Express.js 
