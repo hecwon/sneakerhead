@@ -5,7 +5,7 @@ Sneakerhead Trivia Game
 
 This application was a personal project created within a 24 hour time constraint.  
 
-Test your wits against the sneakerhead trivia game, with over 7000 Jordans from all years to quiz yourself on. Do you really know your stuff?
+Test your wits against the sneakerhead trivia game, with over 1000 Jordans from all years to quiz yourself on. Do you really know your stuff?
 
 ### Description
 An interactive application in which the premise is to guess the details of the shoe that is presented to you. This includes various fields, which are worth a different amount of points, including:
